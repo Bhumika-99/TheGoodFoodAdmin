@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/qcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        app:cardCornerRadius="5dp"
+        app:contentPadding="20dp"
+        app:cardElevation="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/qname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="22sp"
+                android:textAllCaps="false"
+                android:text="name"/>
+            <TextView
+                android:id="@+id/qemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/qname"
+                android:layout_centerHorizontal="true"
+                android:textSize="22sp"
+                android:textAllCaps="false"
+                android:text="email"/>
+
+            <TextView
+                android:id="@+id/qtext1"
+                android:layout_width="match_parent"
+                android:layout_below="@id/qemail"
+                android:layout_height="wrap_content"
+
+                android:text="Queries"
+                android:visibility="gone"
+                android:textSize="22sp"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
