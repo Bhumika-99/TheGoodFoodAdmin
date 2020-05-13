@@ -62,6 +62,7 @@ class Orders : AppCompatActivity() {
                                                             order.orderitems =
                                                                 data.child("foodlist").value as ArrayList<String>
                                                             order.orderid = data.key.toString()
+                                                            order.orderpeople=data.child("people").value.toString()
                                                             order.userref = ds.key.toString()
                                                             if (data.hasChild("status")) {
                                                                 order.status =
